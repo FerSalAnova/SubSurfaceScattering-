@@ -34,3 +34,8 @@ cd build
 cmake ..
 make -j
 ```
+##Resulting Image
+
+Here is an example of the rendered scene with subsurface scattering enabled:
+
+![SSS Render](Figutrs/final_scene.png)
