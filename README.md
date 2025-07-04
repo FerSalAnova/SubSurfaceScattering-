@@ -38,4 +38,4 @@ make -j
 
 Here is an example of the rendered scene with subsurface scattering enabled:
 
-![SSS Render](Figutrs/final_scene.png)
+![SSS Render](Figutrs/Final_scene.png)
