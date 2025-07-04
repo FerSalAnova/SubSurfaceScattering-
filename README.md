@@ -15,7 +15,7 @@ Our method reduces computational complexity to approximately **O(n³)** by organ
 
 ---
 
-## 🛠️ Installation & Setup
+## 🛠Installation & Setup
 
 1. **Install Nori**  
    Follow the official instructions from the [Nori repository](https://github.com/wjakob/nori).
@@ -34,7 +34,7 @@ cd build
 cmake ..
 make -j
 ```
-##Resulting Image
+## Resulting Image
 
 Here is an example of the rendered scene with subsurface scattering enabled:
 
