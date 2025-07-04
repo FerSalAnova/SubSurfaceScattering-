@@ -1,0 +1,498 @@
+<?xml version="1.0" ?>
+<scene>
+	<integrator type="Kd_bssrdf"/>
+	<sampler type="independent">
+		<integer name="sampleCount" value="512"/>
+	</sampler>
+	<camera type="thinlens">
+		<float name="fov" value="39.597755335771296"/>
+		<float name="nearClip" value="0.10000000149011612"/>
+		<float name="farClip" value="1000.0"/>
+		<integer name="width" value="750"/>
+		<integer name="height" value="500"/>
+		<float name="lensRadius" value="0.01"/>
+		<float name="focalDistance" value="2.0"/>
+		<transform name="toWorld">
+			<scale value="-1.000000 1.000000 -1.000000"/>
+			<matrix value="0.9014055728912354,-0.0105173010379076,0.4328480064868927,2.433769702911377,0.43297576904296875,0.021870039403438568,-0.9011402130126953,-2.0202879905700684,1.115984923671931e-05,0.9997054934501648,0.024267511442303658,2.4950602054595947,0.0,0.0,0.0,1.0"/>
+		</transform>
+	</camera>
+	<mesh type="obj">
+		<string name="filename" value="meshes/Table.obj"/>
+		<bsdf type="roughconductor">
+			<color name="R0" value="1.0 0.71 0.29"/>
+			<float name="alpha" value="0.2"/>
+			<color name="albedo" value="0.95 0.75 0.45"/>
+		</bsdf>
+	</mesh>
+	<mesh type="obj">
+		<string name="filename" value="meshes/Table2.obj"/>
+		<bsdf type="roughconductor">
+			<color name="R0" value="1.0 0.71 0.29"/>
+			<float name="alpha" value="0.2"/>
+			<color name="albedo" value="0.95 0.75 0.45"/>
+		</bsdf>
+	</mesh>
+	<mesh type="obj">
+		<string name="filename" value="meshes/Candle3b.obj"/>
+		<bsdf type="bssrdf">
+			<color name="sigma_a" value="0.04 0.015 0.4"/>
+
+			<color name="sigma_s" value=" 1.16 1.2 0.7"/>
+
+			<float name="eta" value="1.3"/>
+
+			<float name="alpha" value="0.01"/>
+
+			<color name="albedo" value="5 4 3"/>
+
+		</bsdf>
+	</mesh>
+	<mesh type="obj">
+		<string name="filename" value="meshes/Candle4b.obj"/>
+		<bsdf type="bssrdf">
+			<color name="sigma_a" value="0.04 0.015 0.4"/>
+
+			<color name="sigma_s" value=" 1.16 1.2 0.7"/>
+
+			<float name="eta" value="1.3"/>
+
+			<float name="alpha" value="0.01"/>
+
+			<color name="albedo" value="5 4 3"/>
+
+		</bsdf>
+	</mesh>
+	<mesh type="obj">
+		<string name="filename" value="meshes/Candle1b.obj"/>
+		<bsdf type="bssrdf">
+			<color name="sigma_a" value="0.04 0.015 0.4"/>
+
+			<color name="sigma_s" value=" 1.16 1.2 0.7"/>
+
+			<float name="eta" value="1.3"/>
+
+			<float name="alpha" value="0.01"/>
+
+			<color name="albedo" value="5 4 3"/>
+
+		</bsdf>
+	</mesh>
+	<mesh type="obj">
+		<string name="filename" value="meshes/Flame3b.obj"/>
+		<emitter type="area">
+			<color name="radiance" value="63 20 4"/>
+		</emitter>
+	</mesh>
+	<mesh type="obj">
+		<string name="filename" value="meshes/Flame4b.obj"/>
+		<emitter type="area">
+			<color name="radiance" value="63 20 4"/>
+		</emitter>
+	</mesh>
+	<mesh type="obj">
+		<string name="filename" value="meshes/Cuenc_back.obj"/>
+		<bsdf type="roughconductor">
+			<color name="R0" value="1.0 0.71 0.29"/>
+			<float name="alpha" value="0.2"/>
+			<color name="albedo" value="0.95 0.75 0.45"/>
+		</bsdf>
+	</mesh>
+	<mesh type="obj">
+		<string name="filename" value="meshes/Candle5b.obj"/>
+		<bsdf type="bssrdf">
+			<color name="sigma_a" value="0.04 0.015 0.4"/>
+
+			<color name="sigma_s" value=" 1.16 1.2 0.7"/>
+
+			<float name="eta" value="1.3"/>
+
+			<float name="alpha" value="0.01"/>
+
+			<color name="albedo" value="5 4 3"/>
+
+		</bsdf>
+	</mesh>
+	<mesh type="obj">
+		<string name="filename" value="meshes/Flame5b.obj"/>
+		<emitter type="area">
+			<color name="radiance" value="63 20 4"/>
+		</emitter>
+	</mesh>
+	<mesh type="obj">
+		<string name="filename" value="meshes/Flame1b.obj"/>
+		<emitter type="area">
+			<color name="radiance" value="63 20 4"/>
+		</emitter>
+	</mesh>
+	<mesh type="obj">
+		<string name="filename" value="meshes/Candle2b.obj"/>
+		<bsdf type="bssrdf">
+			<color name="sigma_a" value="0.04 0.015 0.4"/>
+
+			<color name="sigma_s" value=" 1.16 1.2 0.7"/>
+
+			<float name="eta" value="1.3"/>
+
+			<float name="alpha" value="0.01"/>
+
+			<color name="albedo" value="5 4 3"/>
+
+		</bsdf>
+	</mesh>
+	<mesh type="obj">
+		<string name="filename" value="meshes/Flame2b.obj"/>
+		<emitter type="area">
+			<color name="radiance" value="63 20 4"/>
+		</emitter>
+	</mesh>
+	<mesh type="obj">
+		<string name="filename" value="meshes/Candle6b.obj"/>
+		<bsdf type="bssrdf">
+			<color name="sigma_a" value="0.04 0.015 0.4"/>
+
+			<color name="sigma_s" value=" 1.16 1.2 0.7"/>
+
+			<float name="eta" value="1.3"/>
+
+			<float name="alpha" value="0.01"/>
+
+			<color name="albedo" value="5 4 3"/>
+
+		</bsdf>
+	</mesh>
+	<mesh type="obj">
+		<string name="filename" value="meshes/Flame6b.obj"/>
+		<emitter type="area">
+			<color name="radiance" value="63 20 4"/>
+		</emitter>
+	</mesh>
+	<mesh type="obj">
+		<string name="filename" value="meshes/Candle3t.obj"/>
+		<bsdf type="bssrdf">
+			<color name="sigma_a" value="0.04 0.015 0.4"/>
+
+			<color name="sigma_s" value=" 1.16 1.2 0.7"/>
+
+			<float name="eta" value="1.3"/>
+
+			<float name="alpha" value="0.01"/>
+
+			<color name="albedo" value="5 4 3"/>
+
+		</bsdf>
+	</mesh>
+	<mesh type="obj">
+		<string name="filename" value="meshes/Flame3t.obj"/>
+		<emitter type="area">
+			<color name="radiance" value="63 20 4"/>
+		</emitter>
+	</mesh>
+	<mesh type="obj">
+		<string name="filename" value="meshes/Candle1t.obj"/>
+		<bsdf type="bssrdf">
+			<color name="sigma_a" value="0.04 0.015 0.4"/>
+
+			<color name="sigma_s" value=" 1.16 1.2 0.7"/>
+
+			<float name="eta" value="1.3"/>
+
+			<float name="alpha" value="0.01"/>
+
+			<color name="albedo" value="5 4 3"/>
+
+		</bsdf>
+	</mesh>
+	<mesh type="obj">
+		<string name="filename" value="meshes/Flame1t.obj"/>
+		<emitter type="area">
+			<color name="radiance" value="63 20 4"/>
+		</emitter>
+	</mesh>
+	<mesh type="obj">
+		<string name="filename" value="meshes/Candle5t.obj"/>
+		<bsdf type="bssrdf">
+			<color name="sigma_a" value="0.04 0.015 0.4"/>
+
+			<color name="sigma_s" value=" 1.16 1.2 0.7"/>
+
+			<float name="eta" value="1.3"/>
+
+			<float name="alpha" value="0.01"/>
+
+			<color name="albedo" value="5 4 3"/>
+
+		</bsdf>
+	</mesh>
+	<mesh type="obj">
+		<string name="filename" value="meshes/Flame5t.obj"/>
+		<emitter type="area">
+			<color name="radiance" value="63 20 4"/>
+		</emitter>
+	</mesh>
+	<mesh type="obj">
+		<string name="filename" value="meshes/Candle4t.obj"/>
+		<bsdf type="bssrdf">
+			<color name="sigma_a" value="0.04 0.015 0.4"/>
+
+			<color name="sigma_s" value=" 1.16 1.2 0.7"/>
+
+			<float name="eta" value="1.3"/>
+
+			<float name="alpha" value="0.01"/>
+
+			<color name="albedo" value="5 4 3"/>
+
+		</bsdf>
+	</mesh>
+	<mesh type="obj">
+		<string name="filename" value="meshes/Flame4t.obj"/>
+		<emitter type="area">
+			<color name="radiance" value="63 20 4"/>
+		</emitter>
+	</mesh>
+	<mesh type="obj">
+		<string name="filename" value="meshes/Candle2t.obj"/>
+		<bsdf type="bssrdf">
+			<color name="sigma_a" value="0.04 0.015 0.4"/>
+
+			<color name="sigma_s" value=" 1.16 1.2 0.7"/>
+
+			<float name="eta" value="1.3"/>
+
+			<float name="alpha" value="0.01"/>
+
+			<color name="albedo" value="5 4 3"/>
+
+		</bsdf>
+	</mesh>
+	<mesh type="obj">
+		<string name="filename" value="meshes/Flame2t.obj"/>
+		<emitter type="area">
+			<color name="radiance" value="63 20 4"/>
+		</emitter>
+	</mesh>
+	
+	<!--/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+	
+	<mesh type="obj">
+		<string name="filename" value="meshes/Candle2.obj"/>
+		<bsdf type="bssrdf">
+			<color name="sigma_a" value="0.03 0.011 0.3"/>
+
+			<color name="sigma_s" value=" 1.16 1.2 0.7"/>
+
+			<float name="eta" value="1.3"/>
+
+			<float name="alpha" value="0.01"/>
+
+			<color name="albedo" value="5 4 3"/>
+
+		</bsdf>
+	</mesh>
+	<mesh type="obj">
+		<string name="filename" value="meshes/Candle5.obj"/>
+		<bsdf type="bssrdf">
+			<color name="sigma_a" value="0.03 0.011 0.3"/>
+
+			<color name="sigma_s" value=" 1.16 1.2 0.7"/>
+
+			<float name="eta" value="1.3"/>
+
+			<float name="alpha" value="0.01"/>
+
+			<color name="albedo" value="5 4 3"/>
+
+		</bsdf>
+	</mesh>
+	<mesh type="obj">
+		<string name="filename" value="meshes/Candle1.obj"/>
+		<bsdf type="bssrdf">
+			<color name="sigma_a" value="0.03 0.011 0.3"/>
+
+			<color name="sigma_s" value=" 1.16 1.2 0.7"/>
+
+			<float name="eta" value="1.3"/>
+
+			<float name="alpha" value="0.01"/>
+
+			<color name="albedo" value="5 4 3"/>
+
+		</bsdf>
+	</mesh>
+	<mesh type="obj">
+		<string name="filename" value="meshes/Flame2.obj"/>
+		<emitter type="area">
+			<color name="radiance" value="63 20 4"/>
+		</emitter>
+	</mesh>
+	<mesh type="obj">
+		<string name="filename" value="meshes/Flame5.obj"/>
+		<emitter type="area">
+			<color name="radiance" value="63 20 4"/>
+		</emitter>
+	</mesh>
+	<mesh type="obj">
+		<string name="filename" value="meshes/Cuenc.obj"/>
+		<bsdf type="roughconductor">
+			<color name="R0" value="1.0 0.71 0.29"/>
+			<float name="alpha" value="0.2"/>
+			<color name="albedo" value="0.95 0.75 0.45"/>
+		</bsdf>
+	</mesh>
+	<mesh type="obj">
+		<string name="filename" value="meshes/Candle3.obj"/>
+		<bsdf type="bssrdf">
+			<color name="sigma_a" value="0.03 0.011 0.3"/>
+
+			<color name="sigma_s" value=" 3.16 3.2 2.7"/>
+
+			<float name="eta" value="1.3"/>
+
+			<float name="alpha" value="0.01"/>
+
+			<color name="albedo" value="5 4 3"/>
+
+		</bsdf>
+	</mesh>
+	<mesh type="obj">
+		<string name="filename" value="meshes/Flame3.obj"/>
+		<emitter type="area">
+			<color name="radiance" value="63 20 4"/>
+		</emitter>
+	</mesh>
+	<mesh type="obj">
+		<string name="filename" value="meshes/Flame1.obj"/>
+		<emitter type="area">
+			<color name="radiance" value="63 20 4"/>
+		</emitter>
+	</mesh>
+	<mesh type="obj">
+		<string name="filename" value="meshes/Candle4.obj"/>
+		<bsdf type="bssrdf">
+			<color name="sigma_a" value="0.03 0.011 0.3"/>
+
+			<color name="sigma_s" value=" 1.16 1.2 0.7"/>
+
+			<float name="eta" value="1.3"/>
+
+			<float name="alpha" value="0.01"/>
+
+			<color name="albedo" value="5 4 3"/>
+
+		</bsdf>
+	</mesh>
+	<mesh type="obj">
+		<string name="filename" value="meshes/Flame4.obj"/>
+		<emitter type="area">
+			<color name="radiance" value="63 20 4"/>
+		</emitter>
+	</mesh>
+	<mesh type="obj">
+		<string name="filename" value="meshes/Candle6.obj"/>
+		<bsdf type="bssrdf">
+			<color name="sigma_a" value="0.03 0.011 0.3"/>
+
+			<color name="sigma_s" value=" 1.16 1.2 0.7"/>
+
+			<float name="eta" value="1.3"/>
+
+			<float name="alpha" value="0.01"/>
+
+			<color name="albedo" value="5 4 3"/>
+
+		</bsdf>
+	</mesh>
+	<mesh type="obj">
+		<string name="filename" value="meshes/Flame6.obj"/>
+		<emitter type="area">
+			<color name="radiance" value="63 20 4"/>
+		</emitter>
+	</mesh>
+	<mesh type="obj">
+		<string name="filename" value="meshes/Candle1aux.obj"/>
+		<bsdf type="bssrdf">
+			<color name="sigma_a" value="0.03 0.011 0.3"/>
+
+			<color name="sigma_s" value=" 1.16 1.2 0.7"/>
+
+			<float name="eta" value="1.3"/>
+
+			<float name="alpha" value="0.01"/>
+
+			<color name="albedo" value="5 4 3"/>
+
+		</bsdf>
+	</mesh>
+	<mesh type="obj">
+		<string name="filename" value="meshes/Flame1aux.obj"/>
+		<emitter type="area">
+			<color name="radiance" value="63 20 4"/>
+		</emitter>
+	</mesh>
+	<mesh type="obj">
+		<string name="filename" value="meshes/Candle2aux.obj"/>
+		<bsdf type="bssrdf">
+			<color name="sigma_a" value="0.03 0.011 0.3"/>
+
+			<color name="sigma_s" value=" 1.16 1.2 0.7"/>
+
+			<float name="eta" value="1.3"/>
+
+			<float name="alpha" value="0.01"/>
+
+			<color name="albedo" value="5 4 3"/>
+
+		</bsdf>
+	</mesh>
+	<mesh type="obj">
+		<string name="filename" value="meshes/Flame2aux.obj"/>
+		<emitter type="area">
+			<color name="radiance" value="63 20 4"/>
+		</emitter>
+	</mesh>
+	<mesh type="obj">
+		<string name="filename" value="meshes/Candle4aux.obj"/>
+		<bsdf type="bssrdf">
+			<color name="sigma_a" value="0.03 0.011 0.3"/>
+
+			<color name="sigma_s" value=" 1.16 1.2 0.7"/>
+
+			<float name="eta" value="1.3"/>
+
+			<float name="alpha" value="0.01"/>
+
+			<color name="albedo" value="5 4 3"/>
+
+		</bsdf>
+	</mesh>
+	<mesh type="obj">
+		<string name="filename" value="meshes/Flame4aux.obj"/>
+		<emitter type="area">
+			<color name="radiance" value="63 20 4"/>
+		</emitter>
+	</mesh>
+	<mesh type="obj">
+		<string name="filename" value="meshes/Candle3aux.obj"/>
+		<bsdf type="bssrdf">
+			<color name="sigma_a" value="0.03 0.011 0.3"/>
+
+			<color name="sigma_s" value=" 1.16 1.2 0.7"/>
+
+			<float name="eta" value="1.3"/>
+
+			<float name="alpha" value="0.01"/>
+
+			<color name="albedo" value="5 4 3"/>
+
+		</bsdf>
+	</mesh>
+	<mesh type="obj">
+		<string name="filename" value="meshes/Flame3aux.obj"/>
+		<emitter type="area">
+			<color name="radiance" value="63 20 4"/>
+		</emitter>
+	</mesh>
+
+	
+</scene>

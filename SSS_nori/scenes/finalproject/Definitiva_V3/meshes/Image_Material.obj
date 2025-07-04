@@ -1,0 +1,18 @@
+# Blender v3.6.19 OBJ File: 'Candles_V3.blend'
+# www.blender.org
+mtllib Image.mtl
+o Image_Plane.002
+v -5.290586 6.417443 -2.542811
+v 2.280231 13.843792 -2.525248
+v -5.192812 6.292690 8.061105
+v 2.378004 13.719040 8.078668
+vt 1.000000 0.000000
+vt 0.000000 0.000000
+vt 0.000000 1.000000
+vt 1.000000 1.000000
+vn -0.7002 0.7138 0.0149
+g Image_Plane.002_Material
+usemtl Material
+s off
+f 2/1/1 1/2/1 3/3/1
+f 2/1/1 3/3/1 4/4/1

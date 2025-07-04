@@ -1,0 +1,65 @@
+<!-- Table scene designed by Olesya Jakob -->
+
+<scene>
+	<!-- Independent sample generator, 128 samples per pixel -->
+	<sampler type="independent">
+		<integer name="sampleCount" value="4"/>
+	</sampler>
+
+	<!-- Use the path tracer without multiple importance sampling -->
+    <integrator type="direct_ems"/>
+
+	<!-- Render the scene as viewed by a perspective camera -->
+	<camera type="thinlens">
+		<float name="fov" value="45.0"/>
+		<float name="size" value="50.0"/>
+		<float name="aspect" value="1.33"/>
+		<float name="lensRadius" value="0.05"/>
+		<float name="focalDistance" value="1.0"/>
+
+		<transform name="toWorld">
+			<scale value="-1,1,1"/>
+			<lookat target="0, 0, 0" origin="0, 0, 5" up="0, 1, 0"/>
+		</transform>
+
+		<integer name="width" value="800"/>
+		<integer name="height" value="600"/>
+	</camera>
+
+	<!-- Two light sources  -->
+	<mesh type="obj">
+		<string name="filename" value="meshes/light.obj"/>
+
+		<emitter type="area">
+			<color name="radiance" value="5,5,8"/>
+		</emitter>
+
+		<bsdf type="diffuse">
+			<color name="albedo" value="0,0,0"/>
+		</bsdf>
+	</mesh>
+
+
+	<!-- Diffuse floor -->
+	<mesh type="obj">
+		<string name="filename" value="meshes/bunny.obj"/>
+
+		<bsdf type="diffuse">
+			<color name="albedo" value=".5,.5,.5"/>
+		</bsdf>
+
+	</mesh>
+	
+	<!-- Load the plane bust -->
+	<mesh type="obj">
+		<string name="filename" value="meshes/floor.obj"/>
+
+		<bsdf type="diffuse">
+			<texture type="checker" name="albedo"> 
+			<integer name="scalex" value="100"/>
+			<integer name="scaley" value="100"/>
+			</texture>
+		</bsdf>
+	</mesh>
+
+</scene>
